@@ -13,7 +13,6 @@ body {
     margin: 0 auto;
 }
 
-/*весь контент в блоках укладывается в этот размер.*/
 .content {
     max-width: 1170px;
     margin: 0 auto;
@@ -88,7 +87,6 @@ body {
 }
 
 .menu a:active {
-    background: #8c8c8c;
     color: #212121;
     border-bottom: 3px solid black;
 }
@@ -98,8 +96,6 @@ body {
     list-style-type: none;
     margin: 0 auto;
 }
-
-
 
 .details-menu li {
     float: left;
@@ -120,12 +116,7 @@ body {
     color: #212121!important;
 }
 
-.details-menu a:active {
-    background: #8c8c8c;
-    color: #212121;
-}
-
-/*************** badges begin */
+/*------------------------------------ badges begin */
 .pre-header {
     margin-bottom: 22px;
     font-size: 18px;
@@ -150,7 +141,7 @@ body {
 .gray {
     color: #6c6c6c;
 }
-/******************* badges end */
+/*---------------------------------- badges end */
 
 .order-btn {
     width: 212px;
@@ -221,9 +212,6 @@ body {
     border-radius: 3px;
 }
 
-.explore:hover {
-    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.65);
-}
 .explore:active {
     box-shadow: 0 0 5px 1px rgba(255, 33, 33, 0.65);
 }
@@ -301,22 +289,7 @@ p {
     float: left;
 }
 
-/************* slider controls */
-.controls {
-/*
-    position: relative;
-    bottom: 19px;
-    width: 120px;
-    height: 40px;
-    list-style-type: none;
-*/
-/*
-    margin-top: 640px;
-    margin-left: 90px;
-    float: left;
-*/
-}
-
+/*--------------------------------slider controls */
 .controls li {
     width: 30px;
     height: 30px;
@@ -325,7 +298,6 @@ p {
     background-color: #212121;
     opacity: 0.2;
     border: none!important;
-/*    float: left;*/
 }
 
 .controls li:hover {
@@ -360,18 +332,21 @@ p {
     list-style-type: none;
     margin-bottom: 50px;
     float: left;
+    box-sizing: border-box;
 }
 
 .tab-head li a {
     color: #6c6c6c;
     font-size: 36px;
     font-weight: 700;
-    float: left;
-    padding-left: 9px;
-    padding-right: 20px;
     line-height: 40px;
     border-bottom: 1px solid #6c6c6c;
     text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+	height: 58px;
+	padding: 0 29px 11px 9px;
+    
 }
 
 .tab-head-small li a {
@@ -383,8 +358,7 @@ font-size: 18px!important;
     font-family: "Montserrat";
     font-size: 36px;
     font-weight: 700;
-    border-bottom: 3px solid #212121;
-/*    box-shadow: 0 0 3px 0 black;*/
+    border-bottom: 4px solid #212121;
 }
 
 .overlay-container {
@@ -428,9 +402,9 @@ font-size: 18px!important;
 .reload {
     margin-top: 70px;
 }
-/**************** featured end*/
+/*---------------------------------------------- featured end*/
 
-/****************** promo begin*/
+/*---------------------------------------------- promo begin*/
 .promo {
     margin-top: 120px;
     min-height: 683px;
@@ -448,9 +422,9 @@ font-size: 18px!important;
 .prod2 {
     background-image: url("img/promo-img.jpg");
 }
-/****************** promo end*/
+/*---------------------------------------------------- promo end*/
 
-/********************trends begin*/
+/*----------------------------------------------- trends begin*/
 .trends {
     margin-top: 120px;
 }
@@ -465,16 +439,12 @@ font-size: 18px!important;
     margin-bottom: 30px;
 }
 
-.single-good img:hover {
-    box-shadow: 0 2px 5px 1px rgba(30, 136, 229, 0.65);
-}
-/********************trends end*/
+/*--------------------------------------------------- trends end*/
 
-/********************hot-deal begin*/
+/*---------------------------------------------------- hot-deal begin*/
 .hot-deal {
     margin-top: 120px;
     height: 800px;
-/*    background-image: url("img/slider.jpg");*/
 }
 
 .text-carousel {
@@ -491,9 +461,9 @@ font-size: 18px!important;
     line-height: 24px;
 }
 
-/********************hot-deal end*/
+/*------------------------------------------ hot-deal end*/
 
-/**********************full set begin */
+/*-------------------------------------------- full set begin */
 .full-set {
     margin-top: 120px;
 }
@@ -516,9 +486,9 @@ font-size: 18px!important;
     width: 270px;
     display: flex;
 }
-/**********************full set end */
+/*--------------------------------- full set end */
 
-/**********************mobile-app begin */
+/*------------------------------------ mobile-app begin */
 .mobile-app {
     margin-top: 120px;
     background-image: url('img/back-img.jpg');
@@ -533,9 +503,9 @@ font-size: 18px!important;
 .btn-store {
     margin-right: 10px;
 }
-/**********************mobile-app end */
+/*-------------------------------- mobile-app end */
 
-/********************** footer begin */
+/*-------------------------------------- footer begin */
 .footer {
     padding-top: 120px;
     background-color: #f7f7f7;
@@ -567,13 +537,15 @@ input[type="email"] {
     padding-left: 19px;
     border: none;
     outline: none;
-    width: 300px;
-    min-height: 48px;
     vertical-align: middle;
     color: #6c6c6c;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
+    display: block;
+    width: 301px;
+    height: 46px;
+    float: left;
 }
 
 input[type="submit"] {
@@ -581,15 +553,14 @@ input[type="submit"] {
     height: 40px;
     border: none;
     border-radius: 5px;
-    background: #fff url("img/submit-btn.png") 35% 50% no-repeat 
+    background: #fff url("img/submit-btn.png") 35% 50% no-repeat;
+    
+    
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: url(img/submit-btn.png) no-repeat 12px 15px;
    }
-input[type="submit"]:hover {
-    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.65);
-}
-
-input[type="submit"]:active {
-    box-shadow: 0 0 5px 1px rgba(255, 33, 33, 0.65);
-}
 
 .footer-footer {
     margin-top: 20px;
@@ -601,10 +572,6 @@ input[type="submit"]:active {
 
 .socials img {
     border-radius: 14px;
-}
-
-.socials img:hover{
-    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.65);
 }
 
 .copyright a:hover {
@@ -639,9 +606,9 @@ input[type="submit"]:active {
     font-weight: 300;
     line-height: 22px;
 }
-/********************** footer end */
+/*-------------------------------------- footer end */
 
-/*************begin product details*/
+/*-------------------------------- begin product details*/
 .product-details {
     margin-top: 140px;
 }
@@ -656,16 +623,6 @@ input[type="submit"]:active {
     margin: 5px;
 }
 
-/*
-.controls li:hover {
-    width: 40px;
-    height: 40px;
-    margin: 0;
-    border-radius: 20px;
-    background-color: #212121;
-    opacity: 0.8;
-}
-*/
 .details-indicators .active {
     width: 70px;
     height: 70px;
@@ -725,9 +682,9 @@ input[type="submit"]:active {
     letter-spacing: 0.4px;
     text-align: left!important;
 }
-/*************end product details*/
+/*------------------------------------ end product details*/
 
-/*************begin contacts*/
+/*-------------------------------------- begin contacts*/
 .contact-item {
     padding-right: 15px;
     padding-left: 15px;
@@ -772,4 +729,4 @@ input[type="submit"]:active {
     font-weight: 700;
     line-height: 29.88px;
 }
-/*************end contacts*/
+/*---------------------------------------- end contacts*/
